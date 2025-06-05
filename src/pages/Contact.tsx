@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -32,6 +31,10 @@ const Contact = () => {
     }));
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +61,7 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-amber-600 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Téléphone</h3>
-                    <p className="text-gray-600">+41 XX XXX XX XX</p>
+                    <p className="text-gray-600">+41 78 400 41 66</p>
                     <p className="text-sm text-gray-500 mt-1">
                       Disponible du lundi au vendredi, 8h-18h
                     </p>
@@ -69,7 +72,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-amber-600 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">contact@batex.ch</p>
+                    <p className="text-gray-600">info@batex-renovation.ch</p>
                     <p className="text-sm text-gray-500 mt-1">
                       Réponse sous 24h garantie
                     </p>
