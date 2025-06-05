@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
@@ -25,9 +24,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-gray-300">
-              <p>Téléphone: +41 XX XXX XX XX</p>
-              <p>Email: contact@batex.ch</p>
-              <p>Adresse: Rue de la Rénovation 15<br />1200 Genève, Suisse</p>
+              <p>Téléphone: +41 78 400 41 66</p>
+              <p>Email: info@batex-renovation.ch</p>
+              <p>Adresse: 1227 Carouge, Suisse</p>
             </div>
           </div>
         </div>

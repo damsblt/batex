@@ -84,8 +84,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900">Adresse</h3>
                     <p className="text-gray-600">
-                      Rue de la Rénovation 15<br />
-                      1200 Genève, Suisse
+                      1227 Carouge, Suisse
                     </p>
                   </div>
                 </div>
