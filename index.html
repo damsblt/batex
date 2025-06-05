@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -24,5 +23,10 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if (location.pathname === "/batex/" && !location.hash) {
+        location.replace("/batex/#/");
+      }
+    </script>
   </body>
 </html>
