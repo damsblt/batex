@@ -65,7 +65,7 @@ const FauxMurs = () => {
             Discutons de vos idées pour optimiser vos espaces intérieurs.
           </p>
           <a
-            href="/contact"
+            href="/#/contact"
             className="inline-block bg-amber-700 text-white px-8 py-3 rounded-lg hover:bg-amber-800 transition-colors"
           >
             Demander un devis

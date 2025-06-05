@@ -1,4 +1,3 @@
-
 const Peinture = () => {
   return (
     <div className="min-h-screen py-16">
@@ -65,7 +64,7 @@ const Peinture = () => {
             Contactez-nous pour un devis gratuit et des conseils personnalisés.
           </p>
           <a
-            href="/contact"
+            href="/#/contact"
             className="inline-block bg-amber-700 text-white px-8 py-3 rounded-lg hover:bg-amber-800 transition-colors"
           >
             Demander un devis
