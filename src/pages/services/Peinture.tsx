@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Peinture = () => {
   return (
     <div className="min-h-screen py-16">
@@ -63,12 +65,12 @@ const Peinture = () => {
           <p className="text-lg text-gray-700 mb-6">
             Contactez-nous pour un devis gratuit et des conseils personnalisés.
           </p>
-          <a
-            href="/#/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-amber-700 text-white px-8 py-3 rounded-lg hover:bg-amber-800 transition-colors"
           >
             Demander un devis
-          </a>
+          </Link>
         </div>
       </div>
     </div>

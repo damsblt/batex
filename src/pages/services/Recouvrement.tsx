@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Recouvrement = () => {
   return (
     <div className="min-h-screen py-16">
@@ -64,12 +66,12 @@ const Recouvrement = () => {
           <p className="text-lg text-gray-700 mb-6">
             Demandez conseil à nos experts pour le choix du revêtement idéal.
           </p>
-          <a
-            href="/#/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-amber-700 text-white px-8 py-3 rounded-lg hover:bg-amber-800 transition-colors"
           >
             Demander un devis
-          </a>
+          </Link>
         </div>
       </div>
     </div>

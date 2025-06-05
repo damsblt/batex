@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Galerie = () => {
   const images = [
     {
@@ -103,12 +105,12 @@ const Galerie = () => {
           <p className="text-lg text-gray-700 mb-6">
             Contactez-nous pour discuter de votre projet et voir comment nous pouvons vous aider.
           </p>
-          <a
-            href="/#/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-amber-700 text-white px-8 py-3 rounded-lg hover:bg-amber-800 transition-colors"
           >
             Démarrer mon projet
-          </a>
+          </Link>
         </div>
       </div>
     </div>
