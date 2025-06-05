@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="/baris_ozcan.png"
+              src="/batex/baris_ozcan.png"
               alt="Baris Ozcan au travail"
               className="rounded-lg shadow-lg"
             />
@@ -104,7 +104,7 @@ const About = () => {
           </div>
           <div>
             <img
-              src="/experience.jpg"
+              src="/batex/experience.jpg"
               alt="Outils de menuiserie"
               className="rounded-lg shadow-lg"
             />

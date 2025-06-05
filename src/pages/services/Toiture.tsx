@@ -27,7 +27,7 @@ const Toiture = () => {
             </div>
             <div>
               <img
-                src="/toiture2.jpg"
+                src="/batex/toiture2.jpg"
                 alt="Nettoyage de toiture"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -38,7 +38,7 @@ const Toiture = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/toiture.jpg"
+                src="/batex/toiture.jpg"
                 alt="Toiture en tuiles"
                 className="rounded-lg shadow-lg w-full"
               />

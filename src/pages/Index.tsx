@@ -96,7 +96,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="/renovation.jpg"
+                src="/batex/renovation.jpg"
                 alt="rénovation"
                 className="rounded-lg shadow-lg w-full"
               />

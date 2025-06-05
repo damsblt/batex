@@ -27,7 +27,7 @@ const Recouvrement = () => {
             </div>
             <div>
               <img
-                src="/sol.jpg"
+                src="/batex/sol.jpg"
                 alt="Pose de carrelage"
                 className="rounded-lg shadow-lg aspect-square object-cover mx-auto"
               />
@@ -38,7 +38,7 @@ const Recouvrement = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/escalier.jpg"
+                src="/batex/escalier.jpg"
                 alt="Habillage d'escalier"
                 className="rounded-lg shadow-lg aspect-square object-cover object-bottom mx-auto"
               />
