@@ -2,66 +2,30 @@ import { Link } from "react-router-dom";
 
 const Galerie = () => {
   const images = [
-    {
-      src: "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg",
-      alt: "Travaux de menuiserie",
-      category: "Menuiserie"
-    },
-    {
-      src: "https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg",
-      alt: "Peinture murale",
-      category: "Peinture"
-    },
-    {
-      src: "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg",
-      alt: "Pose de carrelage",
-      category: "Revêtements"
-    },
-    {
-      src: "https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg",
-      alt: "Construction de cloison",
-      category: "Aménagement"
-    },
-    {
-      src: "https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg",
-      alt: "Terrasse en bois",
-      category: "Jardin"
-    },
-    {
-      src: "https://images.pexels.com/photos/6585742/pexels-photo-6585742.jpeg",
-      alt: "Salle de bain moderne",
-      category: "Sanitaires"
-    },
-    {
-      src: "https://images.pexels.com/photos/280232/pexels-photo-280232.jpeg",
-      alt: "Toiture en tuiles",
-      category: "Toiture"
-    },
-    {
-      src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-      alt: "Pose de parquet",
-      category: "Menuiserie"
-    },
-    {
-      src: "https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg",
-      alt: "Préparation des murs",
-      category: "Peinture"
-    },
-    {
-      src: "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg",
-      alt: "Habillage d'escalier",
-      category: "Revêtements"
-    },
-    {
-      src: "https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg",
-      alt: "Faux plafond moderne",
-      category: "Aménagement"
-    },
-    {
-      src: "https://images.pexels.com/photos/2119714/pexels-photo-2119714.jpeg",
-      alt: "Clôture de jardin",
-      category: "Jardin"
-    }
+    { src: "/batex/Galerie/batex-renovation-1.jpeg", alt: "batex-renovation-1", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-2.jpeg", alt: "batex-renovation-2", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-6.jpeg", alt: "batex-renovation-6", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-8.jpeg", alt: "batex-renovation-8", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-10.jpeg", alt: "batex-renovation-10", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-11.jpeg", alt: "batex-renovation-11", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-12.jpeg", alt: "batex-renovation-12", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-15.jpeg", alt: "batex-renovation-15", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-17.jpeg", alt: "batex-renovation-17", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-18.jpeg", alt: "batex-renovation-18", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-19.jpeg", alt: "batex-renovation-19", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-20.jpeg", alt: "batex-renovation-20", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-21.jpeg", alt: "batex-renovation-21", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-22.jpeg", alt: "batex-renovation-22", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-23.jpeg", alt: "batex-renovation-23", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-24.jpeg", alt: "batex-renovation-24", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-25.jpeg", alt: "batex-renovation-25", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-26.jpeg", alt: "batex-renovation-26", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-27.jpeg", alt: "batex-renovation-27", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-28.jpeg", alt: "batex-renovation-28", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-29.jpeg", alt: "batex-renovation-29", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-31.jpeg", alt: "batex-renovation-31", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-32.jpeg", alt: "batex-renovation-32", category: "Rénovation" },
+    { src: "/batex/Galerie/batex-renovation-33.jpeg", alt: "batex-renovation-33", category: "Rénovation" },
   ];
 
   return (
