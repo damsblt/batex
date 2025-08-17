@@ -43,7 +43,7 @@ const FauxMurs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/batex/faux-plafond.jpg"
+                src="/faux-plafond.jpg"
                 alt="Faux plafond moderne"
                 className="rounded-lg shadow-lg w-full"
               />

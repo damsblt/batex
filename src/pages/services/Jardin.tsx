@@ -32,7 +32,7 @@ const Jardin = () => {
             </div>
             <div>
               <img
-                src="/batex/exterieur.jpg"
+                src="/exterieur.jpg"
                 alt="Terrasse en bois"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -43,7 +43,7 @@ const Jardin = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/batex/cloture.jpg"
+                src="/cloture.jpg"
                 alt="Clôture de jardin"
                 className="rounded-lg shadow-lg w-full"
               />

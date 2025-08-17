@@ -38,7 +38,7 @@ const About = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.img
-                src="/batex/baris_ozcan.png"
+                src="/baris_ozcan.png"
                 alt="Baris Ozcan au travail"
                 className="rounded-lg shadow-lg"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -196,7 +196,7 @@ const About = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.img
-                src="/batex/experience.jpg"
+                src="/experience.jpg"
                 alt="Outils de menuiserie"
                 className="rounded-lg shadow-lg"
                 initial={{ opacity: 0, scale: 0.9 }}

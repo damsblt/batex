@@ -66,7 +66,7 @@ const Menuiserie = () => {
               >
                 <div className="rounded-lg shadow-lg w-full h-[350px] md:h-[400px] lg:h-[450px] overflow-hidden bg-neutral-100 flex items-center justify-center">
                   <motion.img
-                    src="/batex/menuiserie2.avif"
+                    src="/menuiserie2.avif"
                     alt="Outil en métal noir et gris"
                     className="object-cover object-center w-full h-full scale-130"
                     style={{ objectPosition: '60% 40%' }}

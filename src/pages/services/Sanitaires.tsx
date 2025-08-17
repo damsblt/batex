@@ -43,7 +43,7 @@ const Sanitaires = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/batex/sanitaire.jpg"
+                src="/sanitaire.jpg"
                 alt="Installation sanitaire"
                 className="rounded-lg shadow-lg w-full"
               />
