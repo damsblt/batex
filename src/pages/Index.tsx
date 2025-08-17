@@ -166,7 +166,7 @@ const Index = () => {
                 transition={{ duration: 0.3 }}
               >
                 <motion.img
-                  src="/batex/accueil.jpeg"
+                  src="/accueil.jpeg"
                   alt="accueil"
                   className="rounded-lg shadow-lg w-full"
                   initial={{ opacity: 0, scale: 0.9 }}
