@@ -18,7 +18,6 @@ import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { withSEO } from "./components/withSEO";
 
 const queryClient = new QueryClient();
 
@@ -31,18 +30,18 @@ const App = () => (
         <div className="min-h-screen bg-neutral-50">
           <Navigation />
           <Routes>
-            <Route path="/" element={withSEO(Index)()} />
-            <Route path="/a-propos" element={withSEO(About)()} />
-            <Route path="/services/menuiserie" element={withSEO(Menuiserie)()} />
-            <Route path="/services/peinture" element={withSEO(Peinture)()} />
-            <Route path="/services/recouvrement" element={withSEO(Recouvrement)()} />
-            <Route path="/services/faux-murs" element={withSEO(FauxMurs)()} />
-            <Route path="/services/jardin" element={withSEO(Jardin)()} />
-            <Route path="/services/sanitaires" element={withSEO(Sanitaires)()} />
-            <Route path="/services/toiture" element={withSEO(Toiture)()} />
-            <Route path="/galerie" element={withSEO(Galerie)()} />
-            <Route path="/contact" element={withSEO(Contact)()} />
-            <Route path="*" element={withSEO(NotFound)()} />
+            <Route path="/" element={<Index />} />
+            <Route path="/a-propos" element={<About />} />
+            <Route path="/services/menuiserie" element={<Menuiserie />} />
+            <Route path="/services/peinture" element={<Peinture />} />
+            <Route path="/services/recouvrement" element={<Recouvrement />} />
+            <Route path="/services/faux-murs" element={<FauxMurs />} />
+            <Route path="/services/jardin" element={<Jardin />} />
+            <Route path="/services/sanitaires" element={<Sanitaires />} />
+            <Route path="/services/toiture" element={<Toiture />} />
+            <Route path="/galerie" element={<Galerie />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
           <WhatsAppButton />

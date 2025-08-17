@@ -7,6 +7,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedServiceCard from "@/components/AnimatedServiceCard";
 import FloatingElement from "@/components/FloatingElement";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   const services = [
@@ -55,7 +56,16 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <SEO
+        title="Bâtex - Entreprise de Rénovation en Suisse | Baris Ozcan"
+        description="Bâtex, dirigée par Baris Ozcan, menuisier certifié avec plus de 15 ans d'expérience. Rénovation, menuiserie, peinture, aménagement intérieur et extérieur en Suisse. Devis gratuit et service de qualité."
+        keywords="rénovation suisse, menuiserie, peinture, aménagement, Baris Ozcan, Bâtex, construction, rénovation intérieure, rénovation extérieure"
+        image="https://batex.ch/accueil.jpeg"
+        url="https://batex.ch"
+        type="website"
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-amber-100 to-orange-100 py-20 overflow-hidden">
         {/* Floating decorative elements */}
@@ -334,6 +344,7 @@ const Index = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
