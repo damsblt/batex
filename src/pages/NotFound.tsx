@@ -1,7 +1,9 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 const NotFound = () => {
+  useScrollToTop();
   const location = useLocation();
 
   useEffect(() => {

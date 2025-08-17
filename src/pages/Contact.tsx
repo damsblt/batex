@@ -3,8 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { motion } from 'framer-motion';
+import AnimatedSection from "@/components/AnimatedSection";
+import FloatingElement from "@/components/FloatingElement";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,99 +35,140 @@ const Contact = () => {
     }));
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
 
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Contactez-nous
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Une question ? Un projet ? Notre équipe réactive est à votre écoute
-          </p>
-        </div>
+        <AnimatedSection direction="up" delay={0.2}>
+          <div className="text-center mb-12">
+            <motion.h1 
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Contactez-nous
+            </motion.h1>
+            <motion.p 
+              className="text-xl text-gray-600 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Une question ? Un projet ? Notre équipe réactive est à votre écoute
+            </motion.p>
+          </div>
+        </AnimatedSection>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Informations de contact */}
-          <div className="space-y-8">
-            <Card className="border-0 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">
-                  Nos coordonnées
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <Phone className="h-6 w-6 text-amber-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Téléphone</h3>
-                    <p className="text-gray-600">+41 78 400 41 66</p>
-                    <p className="text-sm text-gray-500 mt-1">
-                      Disponible du lundi au vendredi, 8h-18h
-                    </p>
-                  </div>
-                </div>
+          <AnimatedSection direction="left" delay={0.4}>
+            <div className="space-y-8">
+              <motion.div
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Card className="border-0 shadow-lg">
+                  <CardHeader>
+                    <motion.div
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: 0.5 }}
+                    >
+                      <CardTitle className="text-2xl text-gray-900">
+                        Nos coordonnées
+                      </CardTitle>
+                    </motion.div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    {[
+                      { icon: <Phone className="h-6 w-6 text-amber-600 mt-1" />, title: "Téléphone", value: "+41 78 400 41 66", subtitle: "Disponible du lundi au vendredi, 8h-18h" },
+                      { icon: <Mail className="h-6 w-6 text-amber-600 mt-1" />, title: "Email", value: "info@batex-renovation.ch", subtitle: "Réponse sous 24h garantie" },
+                      { icon: <MapPin className="h-6 w-6 text-amber-600 mt-1" />, title: "Adresse", value: "1227 Carouge, Suisse", subtitle: "" },
+                      { icon: <Clock className="h-6 w-6 text-amber-600 mt-1" />, title: "Horaires", value: "Lundi - Vendredi : 8h00 - 18h00\nSamedi : 9h00 - 16h00\nDimanche : Fermé", subtitle: "" }
+                    ].map((contact, index) => (
+                      <motion.div 
+                        key={index}
+                        className="flex items-start space-x-4"
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
+                        whileHover={{ x: 5 }}
+                      >
+                        <motion.div
+                          whileHover={{ scale: 1.2, rotate: 5 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          {contact.icon}
+                        </motion.div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900">{contact.title}</h3>
+                          <p className="text-gray-600">{contact.value}</p>
+                          {contact.subtitle && (
+                            <p className="text-sm text-gray-500 mt-1">
+                              {contact.subtitle}
+                            </p>
+                          )}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </CardContent>
+                </Card>
+              </motion.div>
 
-                <div className="flex items-start space-x-4">
-                  <Mail className="h-6 w-6 text-amber-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">info@batex-renovation.ch</p>
-                    <p className="text-sm text-gray-500 mt-1">
-                      Réponse sous 24h garantie
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <MapPin className="h-6 w-6 text-amber-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Adresse</h3>
-                    <p className="text-gray-600">
-                      1227 Carouge, Suisse
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <Clock className="h-6 w-6 text-amber-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Horaires</h3>
-                    <p className="text-gray-600">
-                      Lundi - Vendredi : 8h00 - 18h00<br />
-                      Samedi : 9h00 - 16h00<br />
-                      Dimanche : Fermé
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="bg-amber-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Notre engagement
-              </h3>
-              <p className="text-gray-700">
-                Réactifs et à l'écoute, nous nous engageons à vous rappeler rapidement. 
-                Baris Ozcan et son équipe mettent un point d'honneur à livrer des travaux 
-                de qualité, réalisés avec soin et professionnalisme.
-              </p>
+              <motion.div 
+                className="bg-amber-50 rounded-lg p-6"
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <motion.h3 
+                  className="text-xl font-bold text-gray-900 mb-3"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
+                >
+                  Notre engagement
+                </motion.h3>
+                <motion.p 
+                  className="text-gray-700"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.9 }}
+                >
+                  Réactifs et à l'écoute, nous nous engageons à vous rappeler rapidement. 
+                  Baris Ozcan et son équipe mettent un point d'honneur à livrer des travaux 
+                  de qualité, réalisés avec soin et professionnalisme.
+                </motion.p>
+              </motion.div>
             </div>
-          </div>
+          </AnimatedSection>
 
           {/* Formulaire de contact */}
-          <Card className="border-0 shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">
-                Demande de devis gratuit
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+          <AnimatedSection direction="right" delay={0.6}>
+            <motion.div
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card className="border-0 shadow-lg">
+                <CardHeader>
+                  <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.7 }}
+                  >
+                    <CardTitle className="text-2xl text-gray-900">
+                      Demande de devis gratuit
+                    </CardTitle>
+                  </motion.div>
+                </CardHeader>
+                <CardContent>
+                  <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Nom complet *
@@ -187,12 +232,18 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button
-                  type="submit"
-                  className="w-full bg-amber-700 hover:bg-amber-800 text-white py-3 text-lg"
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  Envoyer ma demande
-                </Button>
+                  <Button
+                    type="submit"
+                    className="w-full bg-amber-700 hover:bg-amber-800 text-white py-3 text-lg"
+                  >
+                    <Send className="h-5 w-5 mr-2" />
+                    Envoyer ma demande
+                  </Button>
+                </motion.div>
 
                 <p className="text-sm text-gray-500 text-center">
                   * Champs obligatoires. Vos données sont traitées en toute confidentialité.
@@ -200,6 +251,8 @@ const Contact = () => {
               </form>
             </CardContent>
           </Card>
+        </motion.div>
+      </AnimatedSection>
         </div>
       </div>
     </div>

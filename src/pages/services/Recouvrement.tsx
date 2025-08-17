@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
+import { Ruler, ArrowRight, Sparkles } from 'lucide-react';
+import AnimatedSection from "@/components/AnimatedSection";
+import FloatingElement from "@/components/FloatingElement";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 const Recouvrement = () => {
+  useScrollToTop();
+  
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
