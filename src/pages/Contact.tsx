@@ -27,6 +27,13 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      // Check if EmailJS is properly configured
+      if (emailjsConfig.serviceId === 'YOUR_SERVICE_ID' || 
+          emailjsConfig.templateId === 'YOUR_TEMPLATE_ID' || 
+          emailjsConfig.publicKey === 'YOUR_PUBLIC_KEY') {
+        throw new Error('EmailJS not configured');
+      }
+
       // EmailJS configuration
       const templateParams = {
         from_name: formData.name,
@@ -53,11 +60,21 @@ const Contact = () => {
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       console.error('Error sending email:', error);
-      toast({
-        title: "Erreur",
-        description: "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer.",
-        variant: "destructive",
-      });
+      
+      // Show appropriate error message
+      if (error instanceof Error && error.message === 'EmailJS not configured') {
+        toast({
+          title: "Configuration requise",
+          description: "Le formulaire de contact n'est pas encore configuré. Veuillez nous contacter directement par téléphone ou email.",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Erreur",
+          description: "Une erreur s'est produite lors de l'envoi du message. Veuillez nous contacter directement.",
+          variant: "destructive",
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
