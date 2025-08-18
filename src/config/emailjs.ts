@@ -3,7 +3,7 @@
 
 export const emailjsConfig = {
   serviceId: 'infomaniak_batex', // Your EmailJS service ID
-  templateId: 'template_2lygiii', // Your EmailJS template ID
+  templateId: 'template_rce763t', // Your EmailJS template ID
   publicKey: 'xRx0PexeDe91wJ0_p', // Your EmailJS public key
 };
 
