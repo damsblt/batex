@@ -7,12 +7,12 @@ const Navigation = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    { name: "Travaux de menuiserie", path: "/services/menuiserie" },
+    { name: "Recouvrement de sol et escaliers", path: "/services/recouvrement" },
     { name: "Peinture et rénovation", path: "/services/peinture" },
-    { name: "Recouvrement / habillage de sols", path: "/services/recouvrement" },
-    { name: "Construction de faux murs", path: "/services/faux-murs" },
-    { name: "Aménagement de jardin", path: "/services/jardin" },
+    { name: "Travaux de menuiserie", path: "/services/menuiserie" },
+    { name: "Construction de murs", path: "/services/faux-murs" },
     { name: "Travaux sanitaires", path: "/services/sanitaires" },
+    { name: "Aménagement de jardin", path: "/services/jardin" },
     { name: "Entretien de toiture", path: "/services/toiture" },
   ];
 

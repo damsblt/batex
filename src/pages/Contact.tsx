@@ -84,10 +84,10 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent className="space-y-6">
                     {[
-                      { icon: <Phone className="h-6 w-6 text-amber-600 mt-1" />, title: "Téléphone", value: "+41 78 400 41 66", subtitle: "Disponible du lundi au vendredi, 8h-18h" },
-                      { icon: <Mail className="h-6 w-6 text-amber-600 mt-1" />, title: "Email", value: "info@batex-renovation.ch", subtitle: "Réponse sous 24h garantie" },
-                      { icon: <MapPin className="h-6 w-6 text-amber-600 mt-1" />, title: "Adresse", value: "1227 Carouge, Suisse", subtitle: "" },
-                      { icon: <Clock className="h-6 w-6 text-amber-600 mt-1" />, title: "Horaires", value: "Lundi - Vendredi : 8h00 - 18h00\nSamedi : 9h00 - 16h00\nDimanche : Fermé", subtitle: "" }
+                      { icon: <Phone className="h-6 w-6 text-amber-600 mt-1" />, title: "Téléphone", value: "+41 78 400 41 66", subtitle: "" },
+                      { icon: <Mail className="h-6 w-6 text-amber-600 mt-1" />, title: "Email", value: "info@batex-renovations.ch", subtitle: "Réponse sous 24h garantie" },
+                      { icon: <MapPin className="h-6 w-6 text-amber-600 mt-1" />, title: "Adresse", value: "1227 Acacias, Suisse", subtitle: "" },
+                      { icon: <Clock className="h-6 w-6 text-amber-600 mt-1" />, title: "Horaires", value: "Lundi - Vendredi : 8h00 - 18h00\nSamedi : 9h00 - 17h00\nDimanche : Fermé", subtitle: "" }
                     ].map((contact, index) => (
                       <motion.div 
                         key={index}

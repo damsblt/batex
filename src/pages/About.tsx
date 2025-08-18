@@ -107,7 +107,7 @@ const About = () => {
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { letter: "Q", title: "Qualité", description: "Chaque projet est réalisé avec le plus grand soin et selon les standards les plus élevés.", icon: <Star className="h-6 w-6 text-amber-700" /> },
+                { letter: "Q", title: "Qualité", description: "Chaque projet est réalisé avec le plus grand soin et selon les standards suisses.", icon: <Star className="h-6 w-6 text-amber-700" /> },
                 { letter: "R", title: "Réactivité", description: "Nous répondons rapidement à vos demandes et respectons les délais convenus.", icon: <Clock className="h-6 w-6 text-amber-700" /> },
                 { letter: "P", title: "Professionnalisme", description: "Notre approche méthodique et notre expertise garantissent des résultats exceptionnels.", icon: <Award className="h-6 w-6 text-amber-700" /> }
               ].map((value, index) => (

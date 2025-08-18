@@ -12,44 +12,44 @@ import SEO from "@/components/SEO";
 const Index = () => {
   const services = [
     {
-      title: "Travaux de menuiserie",
-      description: "Création de meubles sur mesure, pose de parquet, habillage de murs ou de plafonds boisés.",
-      icon: <Wrench className="h-8 w-8 text-amber-600" />,
-      link: "/services/menuiserie"
-    },
-    {
-      title: "Peinture et rénovation",
-      description: "Rafraîchissement de peinture, enduit, préparation des murs et finitions propres.",
-      icon: <PaintRoller className="h-8 w-8 text-amber-600" />,
-      link: "/services/peinture"
-    },
-    {
-      title: "Recouvrement de sols",
-      description: "Pose de revêtements variés : carrelage, vinyle, stratifié, moquette, etc.",
+      title: "Recouvrement de sol et escaliers",
+      description: "Pose de revêtements variés: parquet massif/stratifié, carrelage, vinyle, moquette, etc.",
       icon: <Ruler className="h-8 w-8 text-amber-600" />,
       link: "/services/recouvrement"
     },
     {
-      title: "Construction de faux murs",
-      description: "Réalisation en plaques de plâtre pour délimiter des espaces, intégrer des lumières.",
+      title: "Peinture et rénovation",
+      description: "Préparation des murs, enduisage, peinture et finition propre.",
+      icon: <PaintRoller className="h-8 w-8 text-amber-600" />,
+      link: "/services/peinture"
+    },
+    {
+      title: "Travaux de menuiserie",
+      description: "Installation portes et fenêtres, pose de cuisine, et réparation diverse de boiserie.",
+      icon: <Wrench className="h-8 w-8 text-amber-600" />,
+      link: "/services/menuiserie"
+    },
+    {
+      title: "Construction de murs",
+      description: "Cloisons, faux plafonds, parois et ouverture de murs et fenêtres.",
       icon: <House className="h-8 w-8 text-amber-600" />,
       link: "/services/faux-murs"
     },
     {
-      title: "Aménagement de jardin",
-      description: "Installation de clôtures, terrasses, petits murets ou escaliers extérieurs.",
-      icon: <House className="h-8 w-8 text-amber-600" />,
-      link: "/services/jardin"
-    },
-    {
       title: "Travaux sanitaires",
-      description: "Pose ou remplacement de lavabos, robinets, WC ou douches.",
+      description: "Pose ou remplacement de lavabos, robinets, WC, baignoires et douches.",
       icon: <ShowerHead className="h-8 w-8 text-amber-600" />,
       link: "/services/sanitaires"
     },
     {
+      title: "Aménagement de jardin",
+      description: "Installation de clôtures, terrasses, verandas, cabanes de jardin, etc.",
+      icon: <House className="h-8 w-8 text-amber-600" />,
+      link: "/services/jardin"
+    },
+    {
       title: "Entretien de toiture",
-      description: "Nettoyage, démoussage, petites réparations pour prolonger la durée de vie.",
+      description: "Nettoyage, démoussage, remplacement de tuiles et pare-pluie et pose d'isolation en sous-toiture.",
       icon: <House className="h-8 w-8 text-amber-600" />,
       link: "/services/toiture"
     }

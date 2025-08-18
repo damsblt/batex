@@ -25,8 +25,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-gray-300">
               <p>Téléphone: +41 78 400 41 66</p>
-              <p>Email: info@batex-renovation.ch</p>
-              <p>Adresse: 1227 Carouge, Suisse</p>
+              <p>Email: info@batex-renovations.ch</p>
+              <p>Adresse: 1227 Acacias, Suisse</p>
             </div>
           </div>
         </div>
