@@ -12,23 +12,23 @@ const baseUrl = 'https://batex.ch';
 export const seoConfig: Record<string, SEOConfig> = {
   home: {
     title: 'Bâtex - Rénovation & Menuiserie Suisse | Baris Ozcan | Devis Gratuit',
-    description: 'Bâtex Suisse : rénovation complète, menuiserie sur mesure, peinture professionnelle. Baris Ozcan, menuisier certifié 15+ ans expérience. Devis gratuit, travaux soignés, Genève, Vaud, Suisse romande.',
+    description: 'Bâtex Suisse : rénovation complète, menuiserie sur mesure, peinture professionnelle. Baris Ozcan, menuisier 15+ ans expérience. Devis gratuit, travaux soignés, Genève, Vaud, Suisse romande.',
     keywords: 'rénovation suisse, menuiserie suisse, peinture suisse, rénovation genève, rénovation vaud, menuisier genève, peintre suisse, aménagement intérieur, rénovation complète, devis gratuit rénovation, Baris Ozcan, Bâtex, construction suisse, rénovation appartement, rénovation maison, travaux rénovation',
     image: `${baseUrl}/accueil.jpeg`,
     url: baseUrl,
     type: 'website'
   },
   about: {
-    title: 'Baris Ozcan - Menuisier Certifié Suisse | 15+ Ans Expérience | Bâtex',
-    description: 'Baris Ozcan, menuisier certifié avec 15+ ans d\'expérience en rénovation Suisse. Fondateur de Bâtex, spécialiste menuiserie, peinture, aménagement. Travaux soignés, devis gratuit, Genève, Vaud.',
-    keywords: 'Baris Ozcan, menuisier certifié suisse, menuisier genève, menuisier vaud, expérience rénovation, Bâtex fondateur, expertise construction suisse, menuisier professionnel, rénovation expert, travaux qualité',
+    title: 'Baris Ozcan - Menuisier Suisse | 15+ Ans Expérience | Bâtex',
+    description: 'Baris Ozcan, menuisier avec 15+ ans d\'expérience en rénovation Suisse. Fondateur de Bâtex, spécialiste menuiserie, peinture, aménagement. Travaux soignés, devis gratuit, Genève, Vaud.',
+    keywords: 'Baris Ozcan, menuisier suisse, menuisier genève, menuisier vaud, expérience rénovation, Bâtex fondateur, expertise construction suisse, menuisier professionnel, rénovation expert, travaux qualité',
     image: `${baseUrl}/baris_ozcan.png`,
     url: `${baseUrl}/a-propos`,
     type: 'profile'
   },
   menuiserie: {
     title: 'Menuiserie sur Mesure Suisse | Portes, Fenêtres, Escaliers | Bâtex',
-    description: 'Menuiserie sur mesure en Suisse : portes, fenêtres, escaliers, placards, cuisine. Fabrication et installation par Baris Ozcan, menuisier certifié. Devis gratuit, travaux soignés, Genève, Vaud.',
+    description: 'Menuiserie sur mesure en Suisse : portes, fenêtres, escaliers, placards, cuisine. Fabrication et installation par Baris Ozcan, menuisier. Devis gratuit, travaux soignés, Genève, Vaud.',
     keywords: 'menuiserie sur mesure suisse, menuiserie genève, menuiserie vaud, portes sur mesure, fenêtres sur mesure, escaliers bois, placards sur mesure, cuisine sur mesure, menuisier professionnel, fabrication menuiserie, installation menuiserie, Baris Ozcan',
     image: `${baseUrl}/menuiserie2.avif`,
     url: `${baseUrl}/services/menuiserie`,
@@ -92,7 +92,7 @@ export const seoConfig: Record<string, SEOConfig> = {
   },
   contact: {
     title: 'Contact Bâtex | Devis Gratuit Rénovation Suisse | Baris Ozcan',
-    description: 'Contactez Bâtex pour un devis gratuit de rénovation en Suisse. Baris Ozcan, menuisier certifié, à votre service. Genève, Vaud, Suisse romande. Réponse rapide garantie.',
+    description: 'Contactez Bâtex pour un devis gratuit de rénovation en Suisse. Baris Ozcan, menuisier, à votre service. Genève, Vaud, Suisse romande. Réponse rapide garantie.',
     keywords: 'contact batex, devis gratuit rénovation, contact baris ozcan, menuisier suisse, devis gratuit genève, devis gratuit vaud, contact rénovation, estimation travaux, devis menuiserie',
     image: `${baseUrl}/accueil.jpeg`,
     url: `${baseUrl}/contact`,

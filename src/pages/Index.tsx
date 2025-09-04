@@ -59,7 +59,7 @@ const Index = () => {
     <>
       <SEO
         title="Bâtex - Entreprise de Rénovation en Suisse | Baris Ozcan"
-        description="Bâtex, dirigée par Baris Ozcan, menuisier certifié avec plus de 15 ans d'expérience. Rénovation, menuiserie, peinture, aménagement intérieur et extérieur en Suisse. Devis gratuit et service de qualité."
+        description="Bâtex, dirigée par Baris Ozcan, menuisier avec plus de 15 ans d'expérience. Rénovation, menuiserie, peinture, aménagement intérieur et extérieur en Suisse. Devis gratuit et service de qualité."
         keywords="rénovation suisse, menuiserie, peinture, aménagement, Baris Ozcan, Bâtex, construction, rénovation intérieure, rénovation extérieure"
         image="https://batex.ch/accueil.jpeg"
         url="https://batex.ch"
@@ -96,7 +96,7 @@ const Index = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Baris Ozcan, menuisier certifié avec 15+ ans d'expérience. Rénovation complète, menuiserie sur mesure, peinture professionnelle en Suisse. Devis gratuit.
+                Baris Ozcan, menuisier avec 15+ ans d'expérience. Rénovation complète, menuiserie sur mesure, peinture professionnelle en Suisse. Devis gratuit.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -130,7 +130,7 @@ const Index = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                  Menuisier Certifié Suisse | 15+ Ans d'Expérience en Rénovation
+                  Menuisier Suisse | 15+ Ans d'Expérience en Rénovation
                 </motion.h2>
                 <motion.p 
                   className="text-lg text-gray-700 mb-6"
@@ -139,7 +139,7 @@ const Index = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  <strong>Bâtex</strong> est dirigée par <strong>Baris Ozcan</strong>, menuisier certifié avec plus de 15 ans d'expérience en rénovation Suisse. 
+                  <strong>Bâtex</strong> est dirigée par <strong>Baris Ozcan</strong>, menuisier avec plus de 15 ans d'expérience en rénovation Suisse. 
                   Notre entreprise de rénovation se distingue par sa réactivité, sa polyvalence et la qualité de ses travaux de menuiserie, 
                   peinture et aménagement, réalisés avec soin et professionnalisme en Genève, Vaud et Suisse romande.
                 </motion.p>
@@ -304,7 +304,7 @@ const Index = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Rénovation Complète en Suisse Romande</h3>
                 <p className="text-gray-700 mb-4">
                   <strong>Bâtex</strong> est votre partenaire de confiance pour tous vos projets de <strong>rénovation en Suisse</strong>. 
-                  Dirigée par <strong>Baris Ozcan</strong>, menuisier certifié avec plus de 15 ans d'expérience, notre entreprise 
+                  Dirigée par <strong>Baris Ozcan</strong>, menuisier avec plus de 15 ans d'expérience, notre entreprise 
                   de rénovation couvre Genève, Vaud et toute la Suisse romande.
                 </p>
                 <p className="text-gray-700 mb-4">

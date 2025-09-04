@@ -7,7 +7,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-amber-400 mb-4">Bâtex</h3>
             <p className="text-gray-300">
               Entreprise spécialisée dans la rénovation, dirigée par Baris Ozcan, 
-              menuisier certifié avec plus de 15 ans d'expérience.
+              menuisier avec plus de 15 ans d'expérience.
             </p>
           </div>
           

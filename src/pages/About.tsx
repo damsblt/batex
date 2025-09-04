@@ -66,7 +66,7 @@ const About = () => {
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
                   Bâtex est une entreprise spécialisée dans la rénovation, dirigée par 
-                  <strong> Baris Ozcan</strong>, un menuisier certifié comptant plus de 15 ans d'expérience. 
+                  <strong> Baris Ozcan</strong>, un menuisier comptant plus de 15 ans d'expérience. 
                   Réactif, polyvalent et à l'écoute, il met un point d'honneur à livrer des travaux de qualité, 
                   réalisés avec soin et professionnalisme.
                 </motion.p>
@@ -161,13 +161,13 @@ const About = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.9 }}
                 >
-                  Dirigée par Baris Ozcan, menuisier certifié, notre équipe maîtrise tous les aspects 
+                  Dirigée par Baris Ozcan, menuisier, notre équipe maîtrise tous les aspects 
                   de la rénovation. De la menuiserie traditionnelle aux techniques les plus modernes, 
                   nous adaptons nos compétences à vos besoins spécifiques.
                 </motion.p>
                 <div className="space-y-4">
                   {[
-                    "Menuisier certifié",
+                    "Menuisier",
                     "Plus de 15 ans d'expérience", 
                     "Polyvalence dans tous les corps de métier",
                     "Entreprise basée en Suisse"
