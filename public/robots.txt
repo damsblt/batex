@@ -1,17 +1,50 @@
+# Robots.txt for Bâtex - Entreprise de Rénovation Suisse
+# https://batex.ch
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specific directives for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
 
-# Sitemap
+User-agent: WhatsApp
+Allow: /
+
+# Block access to admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.log$
+
+# Allow access to important files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /manifest.json
+Allow: /favicon.ico
+
+# Sitemap location
 Sitemap: https://batex.ch/sitemap.xml
+
+# Host directive (helps with canonicalization)
+Host: https://batex.ch

@@ -88,7 +88,7 @@ const Index = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                Bienvenue chez <span className="text-amber-700">Bâtex</span>
+                Rénovation & Menuiserie Suisse | <span className="text-amber-700">Bâtex</span>
               </motion.h1>
               <motion.p 
                 className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto"
@@ -96,7 +96,7 @@ const Index = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Votre partenaire de confiance pour tous vos projets de rénovation en Suisse
+                Baris Ozcan, menuisier certifié avec 15+ ans d'expérience. Rénovation complète, menuiserie sur mesure, peinture professionnelle en Suisse. Devis gratuit.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -130,7 +130,7 @@ const Index = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                  Une expertise de plus de 15 ans à votre service
+                  Menuisier Certifié Suisse | 15+ Ans d'Expérience en Rénovation
                 </motion.h2>
                 <motion.p 
                   className="text-lg text-gray-700 mb-6"
@@ -139,9 +139,9 @@ const Index = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  Bâtex est dirigée par <strong>Baris Ozcan</strong>, menuisier certifié avec plus de 15 ans d'expérience. 
-                  Notre entreprise se distingue par sa réactivité, sa polyvalence et la qualité de ses travaux, 
-                  réalisés avec soin et professionnalisme.
+                  <strong>Bâtex</strong> est dirigée par <strong>Baris Ozcan</strong>, menuisier certifié avec plus de 15 ans d'expérience en rénovation Suisse. 
+                  Notre entreprise de rénovation se distingue par sa réactivité, sa polyvalence et la qualité de ses travaux de menuiserie, 
+                  peinture et aménagement, réalisés avec soin et professionnalisme en Genève, Vaud et Suisse romande.
                 </motion.p>
                 <motion.p 
                   className="text-lg text-gray-700 mb-6"
@@ -278,6 +278,67 @@ const Index = () => {
               </Link>
             </motion.div>
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection direction="up" delay={0.2}>
+            <div className="text-center mb-12">
+              <motion.h2 
+                className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                Services de Rénovation Professionnels en Suisse
+              </motion.h2>
+            </div>
+          </AnimatedSection>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <AnimatedSection direction="left" delay={0.3}>
+              <div className="prose prose-lg max-w-none">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Rénovation Complète en Suisse Romande</h3>
+                <p className="text-gray-700 mb-4">
+                  <strong>Bâtex</strong> est votre partenaire de confiance pour tous vos projets de <strong>rénovation en Suisse</strong>. 
+                  Dirigée par <strong>Baris Ozcan</strong>, menuisier certifié avec plus de 15 ans d'expérience, notre entreprise 
+                  de rénovation couvre Genève, Vaud et toute la Suisse romande.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Nous nous spécialisons dans la <strong>rénovation complète</strong> d'appartements et de maisons, 
+                  incluant la <strong>menuiserie sur mesure</strong>, la <strong>peinture professionnelle</strong>, 
+                  le <strong>recouvrement de sols</strong> et l'<strong>aménagement intérieur</strong>.
+                </p>
+                <p className="text-gray-700">
+                  Chaque projet de rénovation est réalisé avec le plus grand soin, en respectant les délais 
+                  et en proposant un <strong>devis gratuit</strong> pour tous nos services.
+                </p>
+              </div>
+            </AnimatedSection>
+            
+            <AnimatedSection direction="right" delay={0.4}>
+              <div className="prose prose-lg max-w-none">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Menuiserie sur Mesure & Peinture Professionnelle</h3>
+                <p className="text-gray-700 mb-4">
+                  Notre expertise en <strong>menuiserie sur mesure</strong> comprend la fabrication et l'installation 
+                  de portes, fenêtres, escaliers, placards et cuisines. Tous nos travaux de menuiserie sont 
+                  réalisés selon les plus hauts standards de qualité.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Le service de <strong>peinture professionnelle</strong> inclut la préparation des murs, 
+                  l'enduisage, l'application de peinture intérieure et extérieure, avec des finitions soignées 
+                  et durables.
+                </p>
+                <p className="text-gray-700">
+                  Nous proposons également des services d'<strong>aménagement extérieur</strong> : terrasses en bois, 
+                  clôtures, cabanes de jardin et espaces paysagers pour compléter votre projet de rénovation.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 

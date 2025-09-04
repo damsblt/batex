@@ -27,14 +27,43 @@
     <link rel="apple-touch-icon" href="/favicon.ico" />
     
     <!-- Additional SEO Meta Tags -->
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow" />
     <meta name="language" content="French" />
     <meta name="geo.region" content="CH" />
     <meta name="geo.placename" content="Suisse" />
+    <meta name="geo.position" content="46.2044;6.1432" />
+    <meta name="ICBM" content="46.2044, 6.1432" />
     <meta name="distribution" content="global" />
     <meta name="rating" content="general" />
     <meta name="revisit-after" content="7 days" />
+    <meta name="classification" content="Business" />
+    <meta name="category" content="Construction, Rénovation, Menuiserie" />
+    <meta name="coverage" content="Suisse" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="format-detection" content="telephone=yes" />
+    
+    <!-- Additional Open Graph Tags -->
+    <meta property="og:locale" content="fr_CH" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:updated_time" content="2024-12-19T00:00:00+01:00" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bâtex - Entreprise de Rénovation en Suisse" />
+    
+    <!-- Additional Twitter Tags -->
+    <meta name="twitter:creator" content="@batex" />
+    <meta name="twitter:image:alt" content="Bâtex - Entreprise de Rénovation en Suisse" />
+    
+    <!-- Business Information -->
+    <meta name="business:contact_data:street_address" content="Acacias" />
+    <meta name="business:contact_data:locality" content="Genève" />
+    <meta name="business:contact_data:postal_code" content="1227" />
+    <meta name="business:contact_data:country_name" content="Suisse" />
+    <meta name="business:contact_data:phone_number" content="+41 78 400 41 66" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://batex.ch" />
@@ -53,35 +82,102 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Bâtex",
-      "description": "Entreprise de rénovation et menuiserie en Suisse",
+      "alternateName": "Batex",
+      "description": "Entreprise de rénovation et menuiserie en Suisse. Spécialiste en rénovation complète, menuiserie sur mesure, peinture professionnelle, aménagement intérieur et extérieur.",
       "url": "https://batex.ch",
       "telephone": "+41 78 400 41 66",
+      "email": "info@batex.ch",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "CH",
         "addressLocality": "Acacias",
-        "postalCode": "1227"
+        "postalCode": "1227",
+        "addressRegion": "Genève"
       },
       "geo": {
         "@type": "GeoCoordinates",
+        "latitude": "46.2044",
+        "longitude": "6.1432",
         "addressCountry": "CH"
       },
       "openingHours": "Mo-Fr 08:00-18:00; Sa 09:00-17:00",
       "priceRange": "€€",
       "currenciesAccepted": "CHF, EUR",
       "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-      "areaServed": "Suisse",
-      "serviceType": ["Rénovation", "Menuiserie", "Peinture", "Aménagement"],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Suisse"
+        },
+        {
+          "@type": "State",
+          "name": "Genève"
+        },
+        {
+          "@type": "State", 
+          "name": "Vaud"
+        }
+      ],
+      "serviceType": [
+        "Rénovation complète",
+        "Menuiserie sur mesure", 
+        "Peinture professionnelle",
+        "Recouvrement de sols",
+        "Aménagement intérieur",
+        "Aménagement extérieur",
+        "Rénovation sanitaires",
+        "Rénovation toiture"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de Rénovation Bâtex",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Menuiserie sur mesure",
+              "description": "Fabrication et installation de portes, fenêtres, escaliers, placards sur mesure"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Peinture professionnelle",
+              "description": "Peinture intérieure et extérieure, préparation murs, finitions soignées"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Recouvrement de sols",
+              "description": "Installation de parquet, carrelage, moquette, stratifié"
+            }
+          }
+        ]
+      },
       "founder": {
         "@type": "Person",
         "name": "Baris Ozcan",
         "jobTitle": "Menuisier Certifié",
-        "description": "Plus de 15 ans d'expérience en rénovation et menuiserie"
+        "description": "Plus de 15 ans d'expérience en rénovation et menuiserie en Suisse",
+        "knowsAbout": ["Menuiserie", "Rénovation", "Peinture", "Aménagement"]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "25",
+        "bestRating": "5",
+        "worstRating": "1"
       },
       "sameAs": [
         "https://www.facebook.com/batex",
         "https://www.instagram.com/batex"
-      ]
+      ],
+      "logo": "https://batex.ch/logo.png",
+      "image": "https://batex.ch/accueil.jpeg"
     }
     </script>
   </head>

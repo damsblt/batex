@@ -1,69 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://batex.ch/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://batex.ch/accueil.jpeg</image:loc>
+      <image:title>Bâtex - Entreprise de Rénovation en Suisse</image:title>
+      <image:caption>Bâtex, votre partenaire de confiance pour tous vos projets de rénovation en Suisse</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/a-propos</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/baris_ozcan.png</image:loc>
+      <image:title>Baris Ozcan - Menuisier Certifié</image:title>
+      <image:caption>Baris Ozcan, fondateur de Bâtex avec plus de 15 ans d'expérience</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/services/menuiserie</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/menuiserie2.avif</image:loc>
+      <image:title>Menuiserie sur Mesure - Bâtex</image:title>
+      <image:caption>Fabrication et installation de menuiserie sur mesure</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/services/peinture</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/renovation.jpg</image:loc>
+      <image:title>Peinture Professionnelle - Bâtex</image:title>
+      <image:caption>Service de peinture intérieure et extérieure professionnel</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/services/recouvrement</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/sol.jpg</image:loc>
+      <image:title>Recouvrement de Sols - Bâtex</image:title>
+      <image:caption>Installation de parquet, carrelage, moquette et autres revêtements</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/services/faux-murs</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/faux-plafond.jpg</image:loc>
+      <image:title>Faux Murs et Cloisons - Bâtex</image:title>
+      <image:caption>Construction de faux murs, cloisons et aménagement intérieur</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/services/jardin</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/exterieur.jpg</image:loc>
+      <image:title>Aménagement Jardin - Bâtex</image:title>
+      <image:caption>Aménagement de jardins, terrasses et espaces extérieurs</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/services/sanitaires</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/sanitaire.jpg</image:loc>
+      <image:title>Rénovation Sanitaires - Bâtex</image:title>
+      <image:caption>Rénovation complète de salles de bain et WC</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/services/toiture</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://batex.ch/toiture.jpg</image:loc>
+      <image:title>Rénovation Toiture - Bâtex</image:title>
+      <image:caption>Réparation et rénovation de toitures</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/galerie</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://batex.ch/Galerie/batex-renovation-1.jpeg</image:loc>
+      <image:title>Galerie Projets - Bâtex</image:title>
+      <image:caption>Découvrez nos réalisations en rénovation et menuiserie</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://batex.ch/contact</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://batex.ch/accueil.jpeg</image:loc>
+      <image:title>Contact Bâtex - Devis Gratuit</image:title>
+      <image:caption>Contactez-nous pour un devis gratuit de rénovation</image:caption>
+    </image:image>
   </url>
 </urlset>
